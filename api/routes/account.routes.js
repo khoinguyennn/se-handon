@@ -99,7 +99,7 @@ router.delete("/accounts/:user", accountController.delete);
  *       201:
  *         description: Giao dịch đã thêm thành công
  */
-router.post("/accounts/:user/transactions", accountController.addTransaction);
+router.post("/accounts/:user/transactions", auth,  accountController.addTransaction);
 
 /**
  * @swagger
@@ -122,6 +122,6 @@ router.post("/accounts/:user/transactions", accountController.addTransaction);
  *       204:
  *         description: Giao dịch đã được xóa
  */
-router.delete("/accounts/:user/transactions/:id", accountController.deleteTransaction);
+router.delete("/accounts/:user/transactions/:id", auth, accountController.deleteTransaction);
 
 module.exports = router;

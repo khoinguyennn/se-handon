@@ -17,7 +17,7 @@ const controller = require("./auth.controller");
  *           schema:
  *             type: object
  *             properties:
- *               username:
+ *               user:
  *                 type: string
  *               password:
  *                 type: string
@@ -47,7 +47,7 @@ router.post("/register", controller.register);
  *           schema:
  *             type: object
  *             properties:
- *               username:
+ *               user:
  *                 type: string
  *               password:
  *                 type: string
