@@ -17,7 +17,7 @@ const options = {
       },
     ],
   },
-  apis: ['./routes/*.js'], // Đường dẫn tới các file route nơi có comment Swagger
+  apis: ['./routes/*.js', './auth/*.js'], // Đường dẫn tới các file route nơi có comment Swagger
 };
 
 const swaggerSpec = swaggerJSDoc(options);

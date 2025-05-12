@@ -6,7 +6,7 @@ const controller = require("./auth.controller");
 
 /**
  * @swagger
- * /register:
+ * /auth/register:
  *   post:
  *     summary: Đăng ký người dùng mới
  *     tags: [Authentication]
@@ -36,7 +36,7 @@ router.post("/register", controller.register);
 
 /**
  * @swagger
- * /login:
+ * /auth/login:
  *   post:
  *     summary: Đăng nhập người dùng
  *     tags: [Authentication]
